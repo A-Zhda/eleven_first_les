@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Lesson {
     public static void main(String[] args) {
         /*
@@ -24,7 +26,7 @@ public class Lesson {
             }
             a++;
         }
-        //System.out.println(weeks);
+        System.out.println(weeks);
 
         //2.6
 
@@ -33,7 +35,7 @@ public class Lesson {
         int mins = n % 3600 / 60;
         int secs = n%60;
 
-       // System.out.println(mins);
+        System.out.println(mins);
 
         //2.13
         int number = 865;
@@ -41,7 +43,7 @@ public class Lesson {
         int last = number/100;
         int pre_last = number%100/10;
         int first = number%10;
-       // System.out.println(first+""+pre_last+""+last);
+        System.out.println(first+""+pre_last+""+last);
 
         //2.19
         int x =5568;
@@ -157,6 +159,24 @@ public class Lesson {
             System.out.println(false);
         }
 
+        //ЗАДАЧА №766
+
+        Scanner sn = new Scanner("10 11 12");
+        int N = sn.nextInt();
+        int M = sn.nextInt();
+        int K = sn.nextInt();
+
+        if(N*M>=K) {
+            System.out.println(true);
+        } else
+            System.out.println(false);
+
+        //ЗАДАЧА №195
+        Scanner sn_1 = new Scanner("10 11 12");
+        n = sn_1.nextInt();
+        a = sn_1.nextInt();
+        b = sn_1.nextInt();
+        System.out.println(2*a*b*n);
     }
 
     public static double max(double x, double y){
